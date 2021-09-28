@@ -162,13 +162,13 @@ p.left-current {
 
 img.ellipsis-img {
   position: relative;
-  left: 8rem;
+  left: 7.5rem;
   padding: 1rem;
 }
 
 p.prev {
   position: relative;
-  left: 3rem;
+  left: 2.5rem;
   color: hsl(236, 100%, 87%);
   font-family: Rubik;
 }
