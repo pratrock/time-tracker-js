@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="https://fonts.google.com/specimen/Rubik" rel="mime" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dashboard">
+        <div class="user-card">
+          <div class="name-card">
+            <div class="user-img">
+              <img src="images/image-jeremy.png" />
+            </div>
+            <div class="user-text">
+              <p>Report for</p>
+              <span class="name">Jeremy Robson </span>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-tab">
+          <div id="daily" class="tab menu-tab" data-content="1">
+            <a> Daily</a>
+          </div>
+          <div id="weekly" class="tab menu-tab active" data-content="2">
+            <a> Weekly</a>
+          </div>
+          <div id="monthly" class="tab menu-tab" data-content="3">
+            <a>Monthly</a>
+          </div>
+        </div>
+      </div>
+      <div class="tracker-card">
+        <div class="tab-panel" id="daily" data-content="1">one</div>
+        <div class="tab-panel show-content" id="weekly" data-content="2">
+          two
+        </div>
+        <div class="tab-panel" id="monthly" data-content="3">three</div>
+      </div>
+    </div>
+    <script type="module" src="tracker.js"></script>
+  </body>
+</html>

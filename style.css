@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+}
+.container {
+  background-color: hsl(226, 43%, 10%);
+  padding: 10px;
+}
+
+.dashboard {
+  border-radius: 25px;
+  background-color: hsl(235, 46%, 20%);
+}
+
+.user-card {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 20px;
+}
+.name-card {
+  display: flex;
+  padding: 1.5rem 2rem;
+}
+
+.user-img img {
+  width: 100px;
+  border: solid white;
+  border-radius: 50%;
+}
+
+.user-text {
+  color: white;
+  padding-left: 1rem;
+}
+.user-text p {
+  font-size: 1rem;
+  color: #8968e0;
+  font-family: Rubik;
+}
+.user-text span {
+  font-size: 1.4rem;
+  color: #ccc4e2;
+  font-family: Rubik;
+}
+.schedule-tab {
+  display: flex;
+  padding: 1rem 1.5rem;
+  font-family: Rubik;
+}
+.menu-tab {
+  padding: 1rem 1rem;
+  color: hsl(228deg 51% 52%);
+  flex-grow: 1;
+  font-size: larger;
+}
+
+.tab {
+  display: inline-block;
+  padding: 10px;
+}
+
+.tab a {
+  cursor: pointer;
+}
+
+.active {
+  color: hsl(236, 100%, 87%);
+}
+
+.tab-panel {
+  display: none;
+  padding: 10px;
+}
+
+.show-content {
+  display: block;
+  color: lightgray;
+}
+.work {
+  background-repeat: no-repeat;
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 10px;
+  transform: scale(-1, 1);
+}
+.play {
+  background-repeat: no-repeat;
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 10px;
+  transform: scale(-1, 1);
+}
+.study {
+  background-repeat: no-repeat;
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 10px;
+  transform: scale(-1, 1);
+}
+
+.exercise {
+  background-repeat: no-repeat;
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 10px;
+  transform: scale(-1, -1);
+}
+.exercise .scheduler-img {
+  transform: rotate(180deg);
+}
+
+.social {
+  background-repeat: no-repeat;
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 10px;
+  transform: scale(-1, 1);
+}
+
+.self-care {
+  background-repeat: no-repeat;
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 10px;
+  transform: scale(-1, 1);
+}
+
+.schedule-card {
+  padding: 1rem;
+}
+
+.schedule-container {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+  top: -25px;
+}
+
+.scheduler-img {
+  transform: rotate(-85deg);
+}
+
+.social .scheduler-img {
+  padding-right: 1rem;
+}
+
+.left-face {
+  padding: 1rem;
+}
+
+p.left-title {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  font-family: Rubik;
+}
+
+p.left-current {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  font-size: 1.6rem;
+  font-family: Rubik;
+}
+.right-face {
+  padding: 1rem;
+}
+
+img.ellipsis-img {
+  position: relative;
+  left: 8rem;
+  padding: 1rem;
+}
+
+p.prev {
+  position: relative;
+  left: 3rem;
+  color: hsl(236, 100%, 87%);
+  font-family: Rubik;
+}
+
+@media only screen and (min-width: 1440px) {
+  .name-card {
+    flex-direction: column;
+  }
+  .tab a:hover {
+    color: white;
+  }
+
+  .user-card {
+    padding-bottom: 4rem;
+  }
+  .user-text span {
+    font-size: 2.5rem;
+    color: #ccc4e2;
+    font-family: Rubik;
+    font-weight: lighter;
+  }
+  .container {
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 15rem;
+  }
+
+  .schedule-tab {
+    display: flex;
+    padding: 1rem 1.5rem;
+    font-family: Rubik;
+    flex-direction: column;
+  }
+  .schedule-card {
+    padding: 1rem;
+    width: 25%;
+    cursor: pointer;
+  }
+
+  .show-content {
+    display: flex;
+    /* display: block; */
+    color: lightgray;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  p.prev {
+    color: hsl(236, 100%, 87%);
+    font-family: Rubik;
+    /* display: block; */
+    position: absolute;
+    top: 7.5rem;
+    left: 2.5rem;
+  }
+
+  p.left-current {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    font-size: 3.2rem;
+    font-family: Rubik;
+    position: relative;
+    left: 0.5rem;
+  }
+  .active {
+    color: white;
+  }
+
+  .schedule-container {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    top: -25px;
+    padding-bottom: 3rem;
+  }
+
+  .schedule-container:hover {
+    background-color: hsl(235, 45%, 61%);
+  }
+
+  img.ellipsis-img {
+    position: relative;
+    left: 0.5rem;
+    /* padding: 1rem; */
+  }
+}
